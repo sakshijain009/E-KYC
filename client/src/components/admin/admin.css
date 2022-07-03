@@ -1,0 +1,10 @@
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+td {
+  width: 16.67%;
+}
+th {
+  width: 16.67%;
+}

@@ -1,0 +1,650 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "e05d4e85-cdc8-4738-9f02-670699a9dd38",
+        "name": "Document Repository"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "host": "${BASE_URL}",
+              "path": "/api/doc/dept"
+            },
+            "id": "7b911e38-876f-4631-b569-df3bbd70f417",
+            "name": "GET All Dept Docs",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "host": "${BASE_URL}",
+              "path": "/api/doc/doctypes"
+            },
+            "id": "0d506041-0db6-4314-a871-da2f6208a66f",
+            "name": "GET All Doctypes",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "host": "${BASE_URL}",
+              "path": "/api/user/kyc/all"
+            },
+            "id": "39946a21-0e87-4e70-a18b-bd6765863df1",
+            "name": "GET All KYC Requests ",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "x-access-token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTg4MWE5YTg0Mjg0MGVlYjU0Y2Q2NCIsIm5hbWUiOiJWZXJpZmllciIsInVzZXJ0eXBlIjoiVmVyaWZpZXIiLCJpYXQiOjE2NTQyMjc5MzYsImV4cCI6MTY1NDMxNDMzNn0.ggMcSej-nqo8GJFexHRXQroZZSDVBJI6s2DyPiVng-Q"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "host": "${BASE_URL}",
+              "path": "/api/doc/fileinfo/file_1654168424314"
+            },
+            "id": "cf031fa6-24ff-4766-9786-cf52719a55a7",
+            "name": "GET File",
+            "headers": []
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "host": "${BASE_URL}",
+              "path": "/api/user/customer/kyc/all"
+            },
+            "id": "8de7a6c2-bc59-45bf-b59a-901a7b35be65",
+            "name": "GET KYC Requests",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "x-access-token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTg4MWMzYTg0Mjg0MGVlYjU0Y2Q2OSIsIm5hbWUiOiJFbXUgVmVybWEiLCJ1c2VydHlwZSI6IkN1c3RvbWVyIiwiaWF0IjoxNjU0NDI0MDQ1LCJleHAiOjE2NTQ1MTA0NDV9.xMtji4OYWo2WkDdtw7XrWU7D13hZbM1aZoBvB2zl5bs"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": ""
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "host": "${BASE_URL}",
+              "path": "/api/notif/user"
+            },
+            "id": "37ae98e5-b14c-45dc-8cd9-595571f00aa1",
+            "name": "GET Notif Users ",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "enabled": true,
+                "name": "x-access-token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTQzNWY4NzFiMzRlYTMwZTZjZDZmYyIsIm5hbWUiOiJ0ZXN0YyIsInVzZXJ0eXBlIjoiQ3VzdG9tZXIiLCJpYXQiOjE2NTUxMTY5OTIsImV4cCI6MTY1NTIwMzM5Mn0.AHX6tWDMBtt2CwekFwqBKT-slTIlGbwiRIZuZ6IGPzY"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n  \"email\":\"emuverma@gmail.com\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "host": "${BASE_URL}",
+              "path": "/api/user/customer/emuverma@gmail.com"
+            },
+            "id": "a4dd1346-0ddd-44cc-9fbd-9e30f5eecbec",
+            "name": "GET User By Email",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "x-access-token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTg4MWMzYTg0Mjg0MGVlYjU0Y2Q2OSIsIm5hbWUiOiJFbXUgVmVybWEiLCJ1c2VydHlwZSI6IkN1c3RvbWVyIiwiaWF0IjoxNjU0MTg1OTA0LCJleHAiOjE2NTQyNzIzMDR9.0XKYrfGn9Ph75FFZRZCBNM6UEKtN1dp2pKp6nE5f7hw"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "host": "${BASE_URL}",
+              "path": "/api/user"
+            },
+            "id": "e8d5c9e1-0e8e-4477-b7fe-77d79bd32340",
+            "name": "GET User Data",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "x-access-token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTg4MWMzYTg0Mjg0MGVlYjU0Y2Q2OSIsIm5hbWUiOiJFbXUgVmVybWEiLCJ1c2VydHlwZSI6IkN1c3RvbWVyIiwiaWF0IjoxNjU0MTYxODczLCJleHAiOjE2NTQyNDgyNzN9.0HX-MuYNyhY3kfsV2GI6nKMHZ-BLrzYmQDF8htSAjuQ"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n  \"id\":\"62b57d3d1c56ac615c565683\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "host": "${BASE_URL}",
+              "path": "/api/notif/permission/request/accept"
+            },
+            "id": "d3c45ff1-4831-4016-916b-ac6bf9678e48",
+            "name": "POST Accept Access Request of LOB",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "enabled": true,
+                "name": "x-access-token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYjU3Y2Y5MWM1NmFjNjE1YzU2NTY2ZSIsIm5hbWUiOiJDdXN0b21lciA0IiwidXNlcnR5cGUiOiJDdXN0b21lciIsImVtYWlsIjoiY3VzdG9tZXI0QGdtYWlsLmNvbSIsImlhdCI6MTY1NjA2MTkzMywiZXhwIjoxNjU2MTQ4MzMzfQ.2A0Q9bpeH5VA5XAvEjULVbaBOpyuA5F4NPa5ucvLIo8"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n  \"department\":\"Financial Consultation\",\n  \"docs\" : [\"Aadhar\",\"Passport\"]\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "host": "${BASE_URL}",
+              "path": "/api/doc/dept/add"
+            },
+            "id": "ec2c6053-1323-461c-be3a-f3b3e520fe70",
+            "name": "POST Add New Department",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n  \"type\" : \"electricity bill\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "host": "${BASE_URL}",
+              "path": "/api/doc/add"
+            },
+            "id": "8e302288-ffd4-406d-9c84-8bf0aa393425",
+            "name": "POST Add New Document",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n  \"email\":\"customer1@gmail.com\",\n  \"password\":\"123456\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "host": "${BASE_URL}",
+              "path": "/api/auth/login"
+            },
+            "id": "3dabbd7c-11f1-4887-8aa8-e3179b001922",
+            "name": "POST Login User",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n  \"customer_email\":\"customer1@gmail.com\",\n  \"message\":\"Notification 2\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "host": "${BASE_URL}",
+              "path": "/api/notif/send"
+            },
+            "id": "2efc6380-9ff8-4281-9ff3-086a6fef4354",
+            "name": "POST Notif send",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "enabled": true,
+                "name": "x-access-token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTlhNTU4OWM2ZWE4NzYyNWM5OTMzNSIsIm5hbWUiOiJWZXJpZmllciIsInVzZXJ0eXBlIjoiVmVyaWZpZXIiLCJpYXQiOjE2NTUyODUwOTIsImV4cCI6MTY1NTM3MTQ5Mn0.rYq7q4l-x6hApBEH6s26uMR6PlHLRAcygZv4yja-xpM"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n  \"name\":\"Verifier\",\n  \"email\":\"verifier@gmail.com\",\n  \"password\":\"123456\",\n  \"password2\":\"123456\",\n  \"role\":\"Verifier\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "host": "${BASE_URL}",
+              "path": "/api/auth/register"
+            },
+            "id": "0cdd37d1-1d8b-4250-8276-9dca27151196",
+            "name": "POST Register User",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "host": "${BASE_URL}",
+              "path": "/api/user/reject/62a05e4f0101b5c1b7781ade/file_1654684794335"
+            },
+            "id": "6c17ed51-5421-4fc7-b84c-acf93c89d62d",
+            "name": "POST Reject A KYC Request",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "x-access-token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTBkMWVhY2U2ZmJkOTU5NGE5OGNmYyIsIm5hbWUiOiJWZXJpZmllciIsInVzZXJ0eXBlIjoiVmVyaWZpZXIiLCJpYXQiOjE2NTQ3NzE1MTUsImV4cCI6MTY1NDg1NzkxNX0.GWs7srI57doTa95mVSUf5qPp8ude3S0PqoRXFoaYJKw"
+              },
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n  \"id\":\"62b57c66f5c9dbea2f9c96c2\"\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "host": "${BASE_URL}",
+              "path": "/api/notif/permission/request/reject"
+            },
+            "id": "2782243a-f986-405a-8d74-3f1701197d54",
+            "name": "POST Reject Access Request of LOB",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "enabled": true,
+                "name": "x-access-token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYjU3YmNhZjVjOWRiZWEyZjljOTY4NyIsIm5hbWUiOiJDdXN0b21lciAzIiwidXNlcnR5cGUiOiJDdXN0b21lciIsImVtYWlsIjoiY3VzdG9tZXIzQGdtYWlsLmNvbSIsImlhdCI6MTY1NjA2MjM1NiwiZXhwIjoxNjU2MTQ4NzU2fQ.CpRVOW7371z-OG97uCT0Y_KUstKDkoHATcLm92hWQGM"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "multipart/form-data",
+                "items": [
+                  {
+                    "enabled": true,
+                    "type": "File",
+                    "name": "file"
+                  },
+                  {
+                    "enabled": true,
+                    "type": "Text",
+                    "name": "doc_type",
+                    "value": "Aadhar"
+                  }
+                ]
+              },
+              "bodyType": "Form"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "host": "${BASE_URL}",
+              "path": "/api/doc/upload"
+            },
+            "id": "ad988005-188d-41ce-8565-e518dca70f6a",
+            "name": "POST Upload file",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "multipart/form-data"
+              },
+              {
+                "enabled": true,
+                "name": "x-access-token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYTlhNDg4N2RhMjAwNjUwM2ZmNmI5YyIsIm5hbWUiOiJDdXN0b21lciAxIiwidXNlcnR5cGUiOiJDdXN0b21lciIsImlhdCI6MTY1NTI5MTkyMiwiZXhwIjoxNjU1Mzc4MzIyfQ.ZY3FdeljGjZtFeorrpWwVpIdi28uTCLcByQydb2cB8w"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "environments": [
+    {
+      "id": "0cdc9123-cd92-478c-96f3-f3003a558613",
+      "name": "Wells",
+      "variables": {
+        "14faaece-35ec-4228-a8f2-191ada952861": {
+          "createdAt": "2022-06-14T17:34:53.046+05:30",
+          "name": "BASE_URL",
+          "value": "http://localhost:5001",
+          "enabled": true,
+          "private": false
+        }
+      }
+    }
+  ]
+}
